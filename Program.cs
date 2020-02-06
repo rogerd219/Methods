@@ -9,15 +9,24 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            // Declare name a string
-            string name;
-            //Ask User for an input
-            Console.Write("INPUT: ");
-            // Read User input
-            name = Console.ReadLine();
-            // Display output based on user input
-            Console.WriteLine("OUTPUT: Hello {0}!", name);
+           
+            {
+              // Declare name a string
+                string name;
+              //Ask User for an input
+               Console.Write("INPUT: ");
+              // Read User input
+               name = Console.ReadLine();
+              // Call method for user input
+               PrintName(name);
+            }
+            
+        }
+        // Method called on for Output
+            private static void PrintName(string name)
+            {
+                Console.WriteLine("OUTPUT: Hello {0}!", name);
+            }
 
         }
     }
-}
